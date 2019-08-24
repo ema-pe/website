@@ -11,8 +11,8 @@ before_script:
     - gem --version
 
 build:
-    stage: deploy
-    script: make deploy
+    stage: build
+    script: make build
     artifacts:
         paths:
             - public
