@@ -1,4 +1,4 @@
-.PHONY: all dev build
+.PHONY: all dev build clean dev-realtime
 
 # Folder that contains the generated website.
 WWW = public
@@ -9,6 +9,9 @@ all: build
 
 dev:
 	@$(JEKYLL_PREFIX) server
+
+dev-realtime:
+	@$(JEKYLL_PREFIX) server --watch
 
 build:
 	@$(JEKYLL_PREFIX) build
