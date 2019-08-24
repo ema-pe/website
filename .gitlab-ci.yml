@@ -1,0 +1,21 @@
+image: fedora:30
+
+variables:
+    LC_ALL: C.UTF-8
+
+before_script:
+    - cat /etc/os-release
+    - dnf --version
+    - dnf --assumeyes install make jekyll
+    - ruby --version
+    - gem --version
+
+build:
+    stages: deploy
+    script: make deploy
+    artifacts:
+        paths:
+            - public
+    only:
+        - master
+
