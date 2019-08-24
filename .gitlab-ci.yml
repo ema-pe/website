@@ -13,7 +13,7 @@ before_script:
     - bundle install
 
 build:
-    stage: build
+    stage: deploy
     script: make build
     artifacts:
         paths:
