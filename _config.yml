@@ -25,10 +25,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-asciidoc
 
 # Do not use '_site', instead 'public' because of GitLab Pages.
 destination: public
@@ -39,3 +39,7 @@ exclude:
     - README.adoc
     - Gemfile
     - Gemfile.lock
+
+# jekyll-asciidoc configuration.
+asciidoc: {}
+asciidoctor: {}

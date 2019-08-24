@@ -7,7 +7,7 @@ variables:
 before_script:
     - cat /etc/os-release
     - dnf --version
-    - dnf --assumeyes install make jekyll
+    - dnf --assumeyes install make jekyll rubygem-jekyll-asciidoc
     - ruby --version
     - gem --version
     - bundle install
@@ -20,4 +20,3 @@ pages:
             - public
     only:
         - master
-
