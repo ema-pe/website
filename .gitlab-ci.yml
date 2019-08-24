@@ -1,6 +1,7 @@
 image: fedora:30
 
 variables:
+    JEKYLL_ENV: production
     LC_ALL: C.UTF-8
 
 before_script:
@@ -9,6 +10,7 @@ before_script:
     - dnf --assumeyes install make jekyll
     - ruby --version
     - gem --version
+    - bundle install
 
 build:
     stage: build
