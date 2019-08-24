@@ -37,6 +37,7 @@ destination: public
 exclude:
     - Makefile
     - README.adoc
+    - LICENSE
     - Gemfile
     - Gemfile.lock
 
