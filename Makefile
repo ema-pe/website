@@ -4,15 +4,14 @@
 WWW = public
 
 JEKYLL_PREFIX = bundler exec jekyll
-JEKYLL_WWW = --destination $(WWW)
 
 all: build
 
 dev:
-	@$(JEKYLL_PREFIX) server $(JEKYLL_WWW)
+	@$(JEKYLL_PREFIX) server
 
 build:
-	@$(JEKYLL_PREFIX) build $(JEKYLL_WWW)
+	@$(JEKYLL_PREFIX) build
 
 clean:
-	@$(JEKYLL_PREFIX) clean $(JEKYLL_WWW)
+	@$(JEKYLL_PREFIX) clean
