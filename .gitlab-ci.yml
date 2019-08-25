@@ -7,10 +7,12 @@ variables:
 before_script:
     - cat /etc/os-release
     - dnf --version
-    - dnf --assumeyes install make jekyll rubygem-jekyll-asciidoc
+    - dnf --assumeyes group install "C Development Tools and Libraries"
+    - dnf --assumeyes install ruby ruby-devel redhat-rpm-config
     - ruby --version
     - gem --version
-    - bundle install
+    - gem install bundler
+    - bundler install
 
 pages:
     stage: deploy

@@ -40,6 +40,7 @@ exclude:
     - LICENSE
     - Gemfile
     - Gemfile.lock
+    - vendor
 
 # jekyll-asciidoc configuration.
 asciidoc: {}

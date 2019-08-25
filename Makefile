@@ -1,4 +1,4 @@
-.PHONY: all dev build clean dev-realtime
+.PHONY: all dev build clean dev-realtime dev-setup
 
 # Folder that contains the generated website.
 WWW = public
