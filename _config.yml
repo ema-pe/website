@@ -47,7 +47,3 @@ asciidoc: {}
 asciidoctor:
   attributes:
     icons: font
-    source-highlighter: pygments
-    pygments-css: class
-    stylesdir: assets/css
-    pygments-stylesheet: asciidoc-pygments.css

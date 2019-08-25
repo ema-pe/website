@@ -9,7 +9,6 @@ before_script:
     - dnf --version
     - dnf --assumeyes group install "C Development Tools and Libraries"
     - dnf --assumeyes install ruby ruby-devel redhat-rpm-config
-    - dnf --assumeyes install python
     - ruby --version
     - gem --version
     - gem install bundler
