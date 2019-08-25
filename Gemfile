@@ -10,3 +10,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-asciidoc'
 end
+
+# Source sintax highlighter for asciidoc.
+gem 'pygments.rb', '~> 1.1.2'
