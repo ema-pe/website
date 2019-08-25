@@ -44,4 +44,6 @@ exclude:
 
 # jekyll-asciidoc configuration.
 asciidoc: {}
-asciidoctor: {}
+asciidoctor:
+  attributes:
+    - icons=font
