@@ -4,6 +4,33 @@
 
 @import "minima";
 
+/* Custom font for admonitions; the selected fonts are taked from Font Awesome */
+
+@font-face {
+  font-family: 'admonitions';
+  src:
+    url('/assets/fonts/admonitions.ttf?f1gnxw') format('truetype'),
+    url('/assets/fonts/admonitions.woff?f1gnxw') format('woff'),
+    url('/assets/fonts/admonitions.svg?f1gnxw#admonitions') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'admonitions' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 span.icon>.fa {
     cursor: default;
 }
@@ -17,7 +44,7 @@ span.icon>.fa {
     cursor: default;
 }
 .admonitionblock td.icon .icon-note:before {
-    content: "\f05a";
+    content: "\f044";
     color: #19407c;
 }
 .admonitionblock td.icon .icon-tip:before {
