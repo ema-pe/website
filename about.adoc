@@ -2,12 +2,24 @@
 :page-layout: page
 :page-permalink: /about
 
-This is the base Jekyll theme. You can find out more info about customizing your
-Jekyll theme, as well as basic Jekyll usage documentation at
-https://jekyllrb.com/[jekyllrb.com]
+== About me
 
-You can find the source code for Minima at GitHub:
-https://github.com/jekyll[jekyll] / https://github.com/jekyll/minima[minima]
+WIP
 
-You can find the source code for Jekyll at GitHub:
-https://github.com/jekyll[jekyll] / https://github.com/jekyll/jekyll[jekyll]
+== Online accounts
+
+WIP
+
+== Contacts
+
+You can use inbox@emanuelepetriglia.com to contact me via email.
+
+WIP
+
+== Open source projects
+
+WIP
+
+== Licensing
+
+WIP
