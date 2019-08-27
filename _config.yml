@@ -25,13 +25,13 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+theme: jekyll-whiteglass
 plugins:
   - jekyll-feed
   - jekyll-asciidoc
-
-# Do not use '_site', instead 'public' because of GitLab Pages.
-destination: public
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # The following items will not be processed and copied to 'public'.
 exclude:
@@ -42,6 +42,21 @@ exclude:
     - Gemfile.lock
     - vendor
 
+paginate_path: /posts/:num/
+paginate: 5
+
+# jekyll-asrchives configuration.
+jekyll-archives:
+  enabled:
+   - categories
+   - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# Do not use '_site', instead 'public' because of GitLab Pages.
+destination: public
 # jekyll-asciidoc configuration.
 asciidoc: {}
 asciidoctor:

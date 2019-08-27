@@ -2,7 +2,6 @@
 :page-liquid:
 :page-layout: post
 :page-date: 2019-08-24 13:10:32 +0200
-:page-categories: blog
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and
 re-build the site to see your changes. You can rebuild the site in many
