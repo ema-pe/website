@@ -1,3 +1,11 @@
+---
+tags:
+  - food
+  - trip
+categories:
+  - Misc
+  - Idea
+---
 = Welcome to Jekyll
 :page-liquid:
 :page-layout: post
