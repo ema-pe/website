@@ -1,6 +1,6 @@
 = About
 :page-layout: page
-:page-permalink: /about
+:page-permalink: /projects
 
 This is the base Jekyll theme. You can find out more info about customizing your
 Jekyll theme, as well as basic Jekyll usage documentation at
