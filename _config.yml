@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Emanuele Petriglia
+author: Emanuele Petriglia
 email: inbox@emanuelepetriglia.com
 description: >- # this means to ignore newlines until "baseurl:"
   Emanuele Petriglia's personal website and blog.
@@ -43,7 +44,7 @@ permalink: /blog/:year/:month/:day/:title/
 paginate_path: /posts/:num/
 paginate: 5
 
-# jekyll-asrchives configuration.
+# jekyll-archives configuration.
 jekyll-archives:
   enabled:
    - categories
