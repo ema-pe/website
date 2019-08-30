@@ -30,6 +30,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+sass:
+  style: compressed
+
 # The following items will not be processed and copied to 'public'.
 exclude:
     - Makefile
