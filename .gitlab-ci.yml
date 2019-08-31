@@ -1,24 +1,28 @@
 image: fedora:30
 
 variables:
-    JEKYLL_ENV: production
-    LC_ALL: C.UTF-8
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+#cache:
+#key: ${CI_COMMIT_REF_SLUG}
+#paths:
+#  - vendor/bundle
 
 before_script:
-    - cat /etc/os-release
-    - dnf --version
-    - dnf --assumeyes group install "C Development Tools and Libraries"
-    - dnf --assumeyes install ruby ruby-devel redhat-rpm-config
-    - ruby --version
-    - gem --version
-    - gem install bundler
-    - bundler install
+  - cat /etc/os-release
+  - dnf --version
+  - dnf --assumeyes group install "C Development Tools and Libraries"
+  - dnf --assumeyes install ruby ruby-devel redhat-rpm-config
+  - gem environment
+  - gem install bundler
+  - bundler install --verbose --jobs $(nproc)
 
 pages:
-    stage: deploy
-    script: make build
-    artifacts:
-        paths:
-            - public
-    only:
-        - master
+  stage: deploy
+  script: make build
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
