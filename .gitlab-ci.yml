@@ -4,10 +4,14 @@ variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
-#cache:
-#key: ${CI_COMMIT_REF_SLUG}
-#paths:
-#  - vendor/bundle
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - /usr/local/share/gems
+    - /usr/local/bin
+    - /usr/share/gems
+    - /root/.gem/ruby
+    - /usr/local/share/gems
 
 before_script:
   - cat /etc/os-release
@@ -16,7 +20,7 @@ before_script:
   - dnf --assumeyes install ruby ruby-devel redhat-rpm-config
   - gem environment
   - gem install bundler
-  - bundler install --verbose --jobs $(nproc)
+  - bundler install --jobs $(nproc)
 
 pages:
   stage: deploy
