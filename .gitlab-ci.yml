@@ -1,32 +1,27 @@
-image: fedora:30
+# This GitLab CI configuration comes from an official GitLab tutorial on
+# publishing websites with Hugo.
+#
+# See: https://docs.gitlab.com/tutorials/hugo/
+default:
+  image: "hugomods/hugo:exts"
 
 variables:
-  JEKYLL_ENV: production
-  LC_ALL: C.UTF-8
+  GIT_SUBMODULE_STRATEGY: recursive
+  THEME_URL: "github.com/adityatelange/hugo-PaperMod.git"
 
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-    - /usr/local/share/gems
-    - /usr/local/bin
-    - /usr/share/gems
-    - /root/.gem/ruby
-    - /usr/local/share/gems
+test:  # builds and tests your site
+  script:
+    - hugo
+  rules:
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
 
-before_script:
-  - cat /etc/os-release
-  - dnf --version
-  - dnf --assumeyes group install "C Development Tools and Libraries"
-  - dnf --assumeyes install ruby ruby-devel redhat-rpm-config
-  - gem environment
-  - gem install bundler
-  - bundler install --jobs $(nproc)
-
-pages:
-  stage: deploy
-  script: make build
+create-pages:  # a user-defined job that builds your pages and saves them to the specified path.
+  script:
+    - hugo
+  pages: true  # specifies that this is a Pages job
   artifacts:
     paths:
       - public
-  only:
-    - master
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment: production

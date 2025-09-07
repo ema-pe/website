@@ -1,0 +1,48 @@
+baseURL: https://www.emanuelepetriglia.com/
+languageCode: en-us
+title: Emanuele Petriglia
+theme: ["PaperMod"]
+
+params:
+  defaultTheme: light
+
+  description: Emanuele Petriglia's Website
+  author: Emanuele Petriglia
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16.ico"
+    favicon32x32: "/favicon-32.ico"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  profileMode:
+    enabled: true
+
+    subtitle: PhD Student at [University of Milano-Bicocca](https://en.unimib.it/) and open source contributor.
+
+    imageUrl: /images/avatar.jpg
+    imageTitle: Emanuele Petriglia
+    imageWidth: 200
+    imageHeight: 200
+
+    buttons:
+      - name: About
+        url: "/about"
+      - name: CV
+        url: "https://gitlab.com/ema-pe/curriculum-vitae/-/jobs/artifacts/master/raw/cv_emanuele_petriglia.pdf?job=build-pdf"
+
+  socialIcons:
+    - name: gitlab
+      url: "https://gitlab.com/ema-pe"
+
+    - name: github
+      url: "https://github.com/ema-pe"
+
+    - name: linkedin
+      url: "https://www.linkedin.com/in/emanuele-petriglia/"
+
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=Ip-LZCoAAAAJ"
+
+    - name: email
+      url: "mailto:inbox@emanuelepetriglia.com"
