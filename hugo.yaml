@@ -30,6 +30,8 @@ params:
         url: "/about"
       - name: CV
         url: "https://gitlab.com/ema-pe/curriculum-vitae/-/jobs/artifacts/master/raw/cv_emanuele_petriglia.pdf?job=build-pdf"
+      - name: Talks
+        url: "/talks"
 
   socialIcons:
     - name: gitlab
