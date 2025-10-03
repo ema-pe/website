@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About me"
 date: 2025-09-07T16:45:00+02:00
 canonicalURL: "https://www.emanuelepetriglia.com/about"
 hideAuthor: true
