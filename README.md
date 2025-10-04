@@ -8,6 +8,10 @@ The git repository is available online on both
 [GitHub](https://github.com/ema-pe/website). However, GitHub is a **read-only
 mirror** of GitLab.
 
+The website uses the [**Hugo
+PaperMod**](https://github.com/adityatelange/hugo-PaperMod) theme, which is
+automatically downloaded via the given [Makefile](Makefile).
+
 ## Running the website
 
 Be sure to have [Hugo](https://gohugo.io/getting-started/installing/) installed
