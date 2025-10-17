@@ -9,11 +9,11 @@ ShowToc: true
 
 Here is the reverse chronology of public, non-professional talks I've given over the past years. They are in Italian and were mainly presented at the [PCOfficina](https://pcofficina.org/) association, where I participate, and at [Linux Day](https://www.linuxday.it/), an annual Italian event dedicated to free and open-source software. Unless otherwise specified, all talks were presented in Italian. Academic talks are not included in this list.
 
-## OpenCL: Thinking in parallel: how to program a GPU with OpenCL
+## Thinking in parallel: how to program a GPU with OpenCL
 
 * Date: 2025-09-30
 * Event: [PCOfficina Tech Talk](https://pcofficina.org/ritorna-lappuntamento-con-i-tech-talk-di-pcofficina/)
-* Content: (coming...)
+* Content: [slides](https://pcofficina.org/wp-content/uploads/2025/10/techtalk_250930_opencl.pdf), [video](https://www.youtube.com/watch?v=ShWElbbcfOE), [article](https://pcofficina.org/tech-talk-opencl/)
 
 ## Build your own open source toolbox
 
