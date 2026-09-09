@@ -1,0 +1,36 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+
+    <h2>Pages</h2>
+    <ul>
+      {{- range site.RegularPages.ByTitle }}
+        {{- if ne .RelPermalink "/sitemap/" }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{- end }}
+      {{- end }}
+    </ul>
+
+    {{- with site.Sections }}
+    <h2>Sections</h2>
+    <ul>
+      {{- range .ByTitle }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}
+
+  </div>
+</article>
+
+{{- end }}
