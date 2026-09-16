@@ -18,6 +18,9 @@ Be sure to have [Hugo](https://gohugo.io/getting-started/installing/) installed
 and also `make` (if you want to skip, just execute the commands listed inside
 the Makefile).
 
+The website has been tested with hugo
+[v0.166.0](https://github.com/gohugoio/hugo/releases/tag/v0.166.0).
+
 Before running the website locally, you need to initialize the project:
 
 ```bash

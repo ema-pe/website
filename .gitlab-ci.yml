@@ -3,7 +3,7 @@
 #
 # See: https://docs.gitlab.com/tutorials/hugo/
 default:
-  image: "hugomods/hugo:exts"
+  image: "ghcr.io/gohugoio/hugo:v0.166.0"
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive

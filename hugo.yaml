@@ -1,5 +1,5 @@
 baseURL: https://www.emanuelepetriglia.com/
-languageCode: en-us
+locale: en-us
 title: Emanuele Petriglia
 theme: ["PaperMod"]
 
@@ -45,6 +45,9 @@ params:
 
     - name: googlescholar
       url: "https://scholar.google.com/citations?user=Ip-LZCoAAAAJ"
+
+    - name: matrix
+      url: "https://matrix.to/#/@ema-pe:matrix.org"
 
     - name: email
       url: "mailto:inbox@emanuelepetriglia.com"
