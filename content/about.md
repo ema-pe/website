@@ -10,4 +10,4 @@ Hello! I am Emanuele Petriglia, a second-year PhD student at the [University of 
 
 Currently, I am investigating the use of Multi-Agent Reinforcement Learning for workload distribution in Function-as-a-Service platforms, particularly DFaaS, which I also help maintain.
 
-In my free time, I enjoy cycling, I am a longtime Linux user, and I like contributing to open-source projects.
+In my free time, I enjoy cycling, I am a longtime Linux user (here you can find my [dotfiles](https://gitlab.com/ema-pe/dotfiles)), and I like contributing to open-source projects.
