@@ -10,13 +10,13 @@ mirror** of GitLab.
 
 The website uses the [**Hugo
 PaperMod**](https://github.com/adityatelange/hugo-PaperMod) theme, which is
-automatically downloaded via the given [Makefile](Makefile).
+automatically downloaded via the given [justfile](justfile).
 
 ## Running the website
 
 Be sure to have [Hugo](https://gohugo.io/getting-started/installing/) installed
-and also `make` (if you want to skip, just execute the commands listed inside
-the Makefile).
+and also [`just`](https://github.com/casey/just) (if you want to skip, just
+execute the commands listed inside the justfile).
 
 The website has been tested with hugo
 [v0.166.0](https://github.com/gohugoio/hugo/releases/tag/v0.166.0).
@@ -24,7 +24,7 @@ The website has been tested with hugo
 Before running the website locally, you need to initialize the project:
 
 ```bash
-make init
+just init
 ```
 
 Then, to start Hugo on a local server:
