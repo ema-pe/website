@@ -4,7 +4,7 @@
 # See: https://docs.gitlab.com/tutorials/hugo/
 default:
   image:
-    name: "ghcr.io/gohugoio/hugo:v0.166.0"
+    name: "ghcr.io/gohugoio/hugo:v0.170.1"
 
     # The image sets ENTRYPOINT to "hugo", so GitLab runs hugo sh -c "hugo" and
     # fails. This is why we override the entrypoint with "".

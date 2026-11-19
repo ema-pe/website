@@ -18,8 +18,18 @@ Be sure to have [Hugo](https://gohugo.io/getting-started/installing/) installed
 and also [`just`](https://github.com/casey/just) (if you want to skip, just
 execute the commands listed inside the justfile).
 
-The website has been tested with hugo
-[v0.166.0](https://github.com/gohugoio/hugo/releases/tag/v0.166.0).
+The website has been tested with Hugo
+[v0.170.1](https://github.com/gohugoio/hugo/releases/tag/v0.170.1).
+
+### Building and testing locally
+
+To use exactly the same Hugo version as the CI, you can build it from source
+with [Go](https://go.dev/doc/install).
+
+```console
+$ go install github.com/gohugoio/hugo@v0.170.1
+$ hugo version
+```
 
 Before running the website locally, you need to initialize the project:
 
@@ -34,6 +44,9 @@ hugo server --buildDrafts
 ```
 
 This will launch the server at [http://localhost:1313](http://localhost:1313).
+
+Just run `hugo` to build the website the same way the CI does, the output will
+be in `public/`.
 
 Each time a new commit is made to the master branch, the website is built and
 published automatically using GitLab CI. See the
